@@ -1,0 +1,329 @@
+/* Reset default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    padding: 0px;
+}
+
+/* Basic styling */
+header {
+    padding :5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+ nav {
+
+    top:0;
+    width:100%;
+    height:auto;
+    padding:10px;
+    background-color:black;
+    display:flex;
+    z-index:900;
+    
+    
+}
+
+ul {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: center;
+   
+}
+
+input[type=date],select{
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+li:hover{
+
+    color: aquamarine;
+}
+
+
+@media all and (max-width:700px){
+   nav{
+      flex-wrap: wrap;
+   }
+}
+
+main {
+    
+    background-color:blanchedalmond;
+  
+}  
+
+.tm-rooms:focus {
+    outline: none;
+}
+.tm-rooms a:focus {
+    outline: none;
+}
+
+.tm-rooms{
+    display: inline-block;
+    background: #353535;
+    max-width: 33.33%;
+    width: 33.33%;
+}
+
+
+.tm-rooms img{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+.tm-rooms p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+padding: 5%;
+
+  
+}
+
+.tm-rooms a{
+    text-decoration: none;
+}
+
+.tm-rooms a p:hover{
+    color: #ec3c6a;
+
+
+}
+
+.s{
+    padding-bottom: 1%;
+}
+
+.flex{
+    display: flex;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.tm-service{
+    max-width: 40%;
+    width: 30%;
+    margin: 1.5% 12% 1.5% 10%;  
+}
+
+.tm-servicesection{
+    
+    display: flex;
+}
+
+.tm-serimage{
+    display: inline-block;
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+}
+
+.tm-service div{
+    display: inline-block;
+
+    max-width: 75%;
+    padding: 5%;
+}
+
+.tm-service p{
+    font-size: 1.3vmax;
+    
+}
+.tm-service .b{
+    padding-bottom: 2%;
+    font-weight: 600;
+}
+
+
+   
+.tm-exp1, .tm-exp2{
+    background: #353535;
+    
+}
+
+.tm-exp1::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.tm-exp2::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.H2{
+      text-align: center;
+}
+
+
+
+.tm-exp1 img{
+    display: block;
+    float: left;
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+    
+}
+
+.tm-exp2 img{
+    display: block;
+    float: right;
+    max-width: 60%;
+    width: 60;
+    height: auto;
+    
+}
+
+
+.tm-expsection::after{
+  content: ".";
+     font-size: xx-small;
+    visibility: hidden;
+}  
+
+
+
+
+section {
+    
+    width: 50%;
+    margin-bottom: 20px; 
+    padding: 20px;
+    background-color: #e7e4e4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+
+form {
+     
+    flex-wrap: table;
+    border: 3px solid #f1f1f1;
+}
+
+ input[type=text],input[type=password],input[type=email],input[type=phone] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px ;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    position:relative;
+    background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px ;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+    
+}
+
+button:hover{
+
+    opacity: 0.8;
+}
+
+
+  
+  
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+    }
+}
+
+.tm-us{
+    display: inline-table;
+    max-width: 30%;
+    width: 30%;
+    margin: 2% 0 2% 4%
+}
+
+.tm-address{
+    display: inline-table;
+    max-width: 30%;
+    width: 30%;
+     margin: 2% 0 2% 25%
+}
+
+footer {
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}

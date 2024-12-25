@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Reservation System - Reservation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    input[type=date],select{
+
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+  
+  
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/images.png" >
+  </header>
+  <nav>
+    <ul>
+      <li class="li"><a href="index.html" style="color: white; text-decoration: solid;">Home</a></li>
+     <li class="li"><a href="room.html" style="color: white; text-decoration: solid;" >RoomGallery</a></li>
+     <li class="li"><a href="reserve.html" style="color: white; text-decoration: solid;">To reserve</a></li>
+     <li class="li"><a href="payment.html" style="color: white; text-decoration: solid;">Payment</a></li>
+     </ul>
+  </nav>
+  
+    <h2 class="H2">Reservation Details</h2>
+    <center>
+  <main>
+    <section style="background-color: bisque;">
+    <form  style="padding: 15px;">
+        <label for="name" style="margin-right: 430px ;">Full name:</label><br>
+        <input type="text" placeholder="Enter name" required><br>
+        <label for="email" style="margin-right: 460px;">Email:</label><br>
+        <input type="email" placeholder=" Enter email" required><br>
+        <label for="phone" style="margin-right: 460px;">Phone:</label><br>
+        <input type="phone" placeholder="Enter phone" required><br>
+        <label for="check-in-date" style="font-size: small;">Check-in Date:</label>
+        <input type="date" id="check-in-date" required>
+        <label for="check-out-date" style="font-size: small;">Check-out Date:</label>
+        <input type="date" id="check-out-date" required>
+        <br>
+        <label for="rooms" style="font-size: small;">Roomtype:</label>
+        <select required>
+          <option value="single room">Single Room</option>
+          <option value="double room">Double Room</option>
+          <option value="luxury room">Luxury Room</option>
+          <option value="standard room">Standard Room</option>
+        </select>
+        <select required>
+          <option value="number">1</option>
+          <option value="number">2</option>
+          <option value="number">3</option>
+          <option value="number">4</option>
+          <option value="number">5</option>
+          <option value="number">6</option>
+          <option value="number">7</option>
+          <option value="number">8</option>
+          <option value="number">9</option>
+          <option value="number">10</option>
+        </select>
+        <label for="guests" style="font-size: small;">Guests:</label>
+        <select required>
+          <optgroup label="Adult">Adult</optgroup>
+          <option value="number">1</option>
+          <option value="number">2</option>
+          <option value="number">3</option>
+          <option value="number">4</option>
+          <option value="number">5</option>
+          <option value="number">6</option>
+          <option value="number">7</option>
+          <option value="number">8</option>
+          <option value="number">9</option>
+          <option value="number">10</option>
+        </select>
+        <select required>
+          <optgroup label="Child">children</optgroup>
+          <option value="number">1</option>
+          <option value="number">2</option>
+          <option value="number">3</option>
+          <option value="number">4</option>
+          <option value="number">5</option>
+          <option value="number">6</option>
+          <option value="number">7</option>
+          <option value="number">8</option>
+          <option value="number">9</option>
+          <option value="number">10</option>
+        </select>
+        <br>
+        <button type="submit" style="width: auto;padding: 10px 18px;
+        background-color: brown"> Confirm </button>
+        <button type="submit" id="cancel-btn" style="width: auto;padding: 10px 18px;
+        background-color: blue">Cancel Reservation</button>
+        <div id="reservation-status"></div>
+    </form>
+    
+    </section>
+
+
+
+  </main>
+    </center>
+  <footer>
+    <div class="tm-us">
+      <p class="bold">About Us</p>
+      <p>We are a part of chain of luxury hotels 
+          which extends all over the world. We 
+          provide a luxorious stay with various value
+          added and free services which will make
+          you visit us over and over again.</p>    
+      </div>
+
+      <div class="tm-address">
+        <p class="bold">Address</p>
+        <p>415, Park Avenu, Hawai
+            Phone : (211) 9275693451
+            Email : majestic@info.com</p>    
+        </div>
+    <p>© 2023 Hotel Reservation System. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
