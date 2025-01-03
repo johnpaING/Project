@@ -1,1 +1,1 @@
-# paingproject.io
+# https://johnpaing.github.io/project/
